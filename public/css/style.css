@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+/*  navigation panel    */
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 42px;
+    background-color: rgb(22, 43, 71);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+header:hover{
+    
+}
+
+header > .nav-link {
+    display: block;
+    position: inherit;
+    padding: 4px 7px;
+    font-size: 16px;
+}
+
+header > .nav-link:hover {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+/*  end navigation panel style  */
+
+body {
+    background-color: aqua;
+}
+
+.block {
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+h1{
+    color: black;
+    font-size:3em;
+}
+.test{
+    text-align: left;
+    width: 60%;
+    margin-left: 15%;
+}
+.head-spot{
+    background-color: rgb(30, 77, 92);
+    height: 31px;
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 9px;
+    padding-left: 7px;
+    box-shadow:0 0 10px rgb(14, 53, 66);
+}
+.about-text{
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+.about-enter{
+    text-align:center;
+    font-size: 24px;
+}
+.index-text{
+    text-align:center;
+    font-size: 24px;
+}
