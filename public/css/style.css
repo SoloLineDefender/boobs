@@ -25,7 +25,7 @@ header {
     color: rgb(0, 0, 0);
 }
 header:hover{
-    
+    color: aqua;
 }
 
 header > .nav-link {
