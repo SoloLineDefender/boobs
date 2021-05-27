@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 
-a {
+.nav-link {
+    padding-left: 100px;
     display: block;
     color: #000;
     text-decoration: none;
 }
 
-/*  navigation panel    */
+/* Навигационная панель */
 header {
     position: relative;
     display: flex;
@@ -18,29 +19,82 @@ header {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
-    height: 42px;
-    background-color: rgb(22, 43, 71);
+    height: 52px;
+    background-color: rgb(160, 118, 63);
     box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-image: url(/public/data/books.jpg);
+    background-position: 0px 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
-}
-header:hover{
-    color: aqua;
+    transition: height .2s ease;
 }
 
 header > .nav-link {
+    flex-direction:column;
+    flex-wrap: nowrap;
+    align-items: center;
     display: block;
+    height: inherit;
     position: inherit;
     padding: 4px 7px;
     font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(160, 118, 63, 0.568) ;
+    transition: background-color .5s ease;
 }
 
 header > .nav-link:hover {
     color: rgb(0, 0, 0);
-    font-size: 17px;
+    background-color:rgb(168, 127, 73) ;
 }
-/*  end navigation panel style  */
+.teg-lyb{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+/* Навигационная панель */
 
+/* Топ бар поиск и вход регистрации пользователя*/
+
+.top-bar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    height: 47px;
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    transition: height .4s 0.1s ease;
+    
+}
+.top-bar:hover{
+    height: 70px;
+    padding-top: 4px;
+    transition: height .4s 0.1s ease;
+}
+.top-bar > .top-bar-menu{
+    position: inherit;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    background-size: 40px;
+    background-color: lawngreen;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 3px;
+}
+.top-bar > .top-bar-menu:hover{
+    background-color: rgb(93, 187, 0);
+}
+/* Топ бар поиск и вход регистрации пользователя*/
 body {
     background-color: aqua;
 }
@@ -55,10 +109,14 @@ h1{
     font-size:3em;
 }
 .test{
-    text-align: left;
-    width: 60%;
-    margin-left: 15%;
+    text-align:center;
+    font-size: 24px;
 }
+.back{
+    text-decoration:black;
+    color: green;
+}
+
 .head-spot{
     background-color: rgb(30, 77, 92);
     height: 31px;

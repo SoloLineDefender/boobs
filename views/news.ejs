@@ -17,18 +17,14 @@
     
     <div class="block">
         <h1>Новоысти с ИД - <%= newsId %></h1>
+        <div class="test">
         <p>
             <b>
                 Title:
             </b>
             <%= obj.title %> 
         </p>
-        <p>
-            <b>
-                ID:
-            </b>
-            
-        </p>
+        <p><b>ID:</b><%= obj.id %></p>
         <p>
             по новости с этим ИД - <%= newsId %>, нихуя нового
         </p>
@@ -37,6 +33,7 @@
                 <li><%= item %> </li>
             <%  });%>  
         </ul>
+        </div>
     </div>
 </body>
 </html>
